@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adorable Puppies</title>
+    <link rel="shortcut icon" href="./img2.avif" type="image/x-icon">
+   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+.top {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+ol li {
+  list-style: none;
+  display: inline-block;
+}
+.top a {
+  text-decoration: none;
+  padding: 40px 20px;
+  margin-top: 30px;
+  color: #000;
+}
+.sub1 {
+  background-image: url(img1.avif);
+  background-position: center;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub2 {
+  background-image: url(img3.avif);
+  background-position: center;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub3 {
+  background-image: url(img4.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+ object-fit: fill;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainbg1 {
+  background: rgba(235, 255, 235, 0.7);
+  margin: 60px 100px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+img {
+  width: 550px;
+  height: 350px;
+  border-radius: 10px;
+  margin: 0 30px 0 0;
+}
+
+footer {
+  background-color: #1c1b1bc7;
+  color: aliceblue;
+  height: 100px;
+  width: 100%;
+  padding-top: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 780px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: small;
+  }
+  .sub1 .sub2 .sub3 {
+    display: flex;
+    flex-direction: column;
+    background-size: auto;
+    width: 400px;
+    height: 300px;
+  }
+  .mainbg1 {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    font-size: small;
+  }
+  img {
+    width: 280px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  .acr {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .sub1 .sub2 .sub3 {
+    /* background-size: cover; */
+    object-fit: fill;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-content: center;
+    background-size: 200px;
+  }
+  .mainbg1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 320px;
+    height: 250px;
+    padding: 30px;
+    font-size: small;
+  }
+  img {
+    width: 230px;
+    height: 120px;
+  }
+}
+   </style>
+</head>
+
+<body>
+    <main>
+        <div class="top">
+            <h1>Adorable Puppies</h1>
+            <ol class="acr">
+                <li><a href="#main1">Playful Pupe</a></li>
+                <li><a href="#main2">Sleepy Pupe</a></li>
+                <li><a href="#main3">Curious Pupe</a></li>
+            </ol>
+        </div>
+        <section class="sub1" id="main1">
+            <div class="mainbg1">
+                <div>
+                    <img src="img1.avif" alt="">
+                </div>
+                <div>
+                    <h2>Playful Puppies</h2>
+                    <p>Puppies love to play! It's how they learn about the world and develop important slella!</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="sub2" id="main2">
+            <div class="mainbg1">
+                <div>
+                    <img src="img4.avif" alt="">
+                </div>
+                <div>
+                    <h2>Sleepy Puppies
+                    </h2>
+                    <p>Puppies need lots of sleep to grow big and strong. They con sleep up to 20 hours a day!</p>
+                </div>
+            </div>
+
+        </section>
+        <section class="sub3" id="main3">
+            <div class="mainbg1">
+                <div>
+                    <img src="img3.avif" alt="">
+                </div>
+                <div>
+                    <h2>Curious Puppies
+                    </h2>
+                    <p>Puppies ane naturally curious and love to explore their surroundings. Thie helps
+                        them learn and grow!</p>
+                </div>
+            </div>
+
+        </section>
+        <footer>
+            <p><a href=""></a>&copy;YG-2024-04</p>
+        </footer>
+    </main>
+</body>
+
+</html>
